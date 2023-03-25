@@ -1,0 +1,15 @@
+There are certain issues raised during recent installation of MissionBio Mosaic in windows using Anaconda Platform. It's probably because of new Conda update! Please find the step-by-step guideline:
+Install latest Aanaconda3
+Run Anaconda prompt(Anaconda3) with administrative privilege.
+Anaconda has introduced Libmamba solver. conda 22.11 update: The libmamba solver's experimental flag has been removed. To use the new solver, update conda in your base environment:
+conda update -n base conda
+To install and set the new solver, run the following commands:
+conda install -n base conda-libmamba-solver
+conda config --set solver libmamba ....(https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community)
+Set the conda channel priority to strict: conda config --set channel_priority strict
+Close the window
+Open your Anaconda prompt(Anaconda3) with administrative privilege
+Run.. conda create --name mosaic -c missionbio -c plotly -c conda-forge missionbio.mosaic notebook
+conda activate mosaic
+jupyter notebook
+Run... conda list.... you will see missionbio.mosaic latest version installed in your jupyter notebook. 
