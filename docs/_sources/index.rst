@@ -5,9 +5,13 @@ Mosaic API documentation
    :class: note
 
    The latest version of Mosaic is recommended for new developments. Documentation for the other
-   versions are available applications and notebooks built using them:
-   `v2.4.1 <https://missionbio.github.io/mosaic/v2.4.1/index.html>`_
-   & `v1.8.0 (unsupported) <https://missionbio.github.io/mosaic/v1.8.0/index.html>`_
+   versions are available for applications and notebooks built using them:
+   `v3.7.0r2 <https://missionbio.github.io/mosaic/v3.7.0r2/index.html>`_,
+   `v3.7.0r1 (first documentation revision of v3.7.0) <https://missionbio.github.io/mosaic/v3.7.0r1/index.html>`_
+   , `v3.4.0 <https://missionbio.github.io/mosaic/v3.4.0/index.html>`_
+   , `v3.1.1 <https://missionbio.github.io/mosaic/v3.1.1/index.html>`_
+   , `v2.4.1 <https://missionbio.github.io/mosaic/v2.4.1/index.html>`_
+   , `v1.8.0 <https://missionbio.github.io/mosaic/v1.8.0/index.html>`_
 
 
 Mosaic is a set of tools to analyze DNA and protein data obtained from the Mission Bio Tapestri instrument.
@@ -19,13 +23,14 @@ exploratory analysis.
    :hidden:
    :maxdepth: 2
 
-   pages/install
-   pages/getting_started
-   pages/data_structure
-   pages/vignettes
-   pages/curated_jupyter_notebooks
-   pages/help
-   pages/changelog
+   manual/install
+   manual/getting_started
+   manual/data_structure
+   manual/cohort
+   manual/vignettes
+   manual/curated_jupyter_notebooks
+   manual/help
+   manual/changelog
 
 Basic Classes
 ~~~~~~~~~~~~~
@@ -33,7 +38,7 @@ Basic Classes
    :recursive:
    :nosignatures:
    :caption: Basic Classes
-   :toctree: autosummary_pages
+   :toctree: pages
    :template: class.rst
 
    ~missionbio.mosaic.assay._Assay
@@ -49,7 +54,7 @@ Interactive Workflows
    :recursive:
    :nosignatures:
    :caption: Interactive Workflows
-   :toctree: autosummary_pages
+   :toctree: pages
    :template: class.rst
 
    ~missionbio.mosaic.workflows.copy_number.CopyNumber
@@ -60,10 +65,10 @@ Algorithms
 .. autosummary::
    :recursive:
    :caption: Algorithms
-   :toctree: autosummary_pages
+   :toctree: pages
    :template: class.rst
 
-   ~missionbio.mosaic.algorithms.nsp.NSP
+   ~missionbio.demultiplex.protein.nsp.NSP
    ~missionbio.mosaic.algorithms.group_by_genotype.GroupByGenotype
    ~missionbio.mosaic.algorithms.compass.COMPASS
 
@@ -72,7 +77,7 @@ Functional Modules
 .. autosummary::
    :recursive:
    :caption: Functional Modules
-   :toctree: autosummary_pages
+   :toctree: pages
    :template: module.rst
 
    ~missionbio.mosaic.io
@@ -85,12 +90,38 @@ Custom Plots
    :recursive:
    :nosignatures:
    :caption: Custom Plots
-   :toctree: autosummary_pages
+   :toctree: pages
    :template: class.rst
 
-   ~missionbio.mosaic.plots.heatmap.Heatmap
-   ~missionbio.mosaic.plots.lineplot.LinePlot
-   ~missionbio.mosaic.plots.bargraph.BarGraph
-   ~missionbio.mosaic.plots.multi_heatmap.MultiHeatmap
-   ~missionbio.mosaic.plots.fishplot.TreeGraph
-   ~missionbio.mosaic.plots.fishplot.Fishplot
+   ~missionbio.plotting.heatmap.Heatmap
+   ~missionbio.plotting.lineplot.LinePlot
+   ~missionbio.plotting.bargraph.BarGraph
+   ~missionbio.plotting.multimap.MultiMap
+   ~missionbio.plotting.phylotree.PhyloTree
+   ~missionbio.plotting.fishplot.Fishplot
+
+DNA Assignment
+~~~~~~~~~~~~~~
+.. autosummary::
+   :recursive:
+   :nosignatures:
+   :caption: DNA assignment
+   :toctree: pages
+   :template: class.rst
+
+   ~missionbio.demultiplex.dna.truth.Truth
+   ~missionbio.demultiplex.dna.likelihood.LikelihoodMethod
+   ~missionbio.mosaic.algorithms.dna_assignment.DnaAssignment
+
+Protein Assignment
+~~~~~~~~~~~~~~~~~~
+.. autosummary::
+   :recursive:
+   :nosignatures:
+   :caption: Protein assignment
+   :toctree: pages
+   :template: class.rst
+
+   ~missionbio.demultiplex.protein.truth.Truth
+   ~missionbio.demultiplex.protein.pace.likelihood.LikelihoodMethod
+   ~missionbio.demultiplex.protein.pace.probability.ProbabilityMethod
