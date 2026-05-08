@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Installation &#8212; Mosaic v3.12.2 documentation</title>
+    <title>Installation &#8212; Mosaic v3.17.0 documentation</title>
   
   
   
@@ -51,7 +51,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Getting Started" href="getting_started.html" />
-    <link rel="prev" title="Mosaic API documentation" href="../index.html" />
+    <link rel="prev" title="License" href="license.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -139,12 +139,13 @@
   
   
   
-    <p class="title logo__title">Mosaic v3.12.2 documentation</p>
+    <p class="title logo__title">Mosaic v3.17.0 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_structure.html">Data structure</a></li>
@@ -190,6 +191,7 @@
 
 
 
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/curated_notebooks/ge-protein.html">Single sample GE+Protein</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="help.html">Additional resources</a></li>
@@ -202,6 +204,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.mosaic.dna.Dna.html">Dna</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.mosaic.cnv.Cnv.html">Cnv</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.mosaic.protein.Protein.html">Protein</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.mosaic.ge.Ge.html">Ge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.mosaic.rna.Rna.html">Rna</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.mosaic.sample.Sample.html">Sample</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.mosaic.samplegroup.SampleGroup.html">SampleGroup</a></li>
 </ul>
@@ -215,6 +219,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.demultiplex.protein.nsp.NSP.html">NSP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.mosaic.algorithms.group_by_genotype.GroupByGenotype.html">GroupByGenotype</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.mosaic.algorithms.compass.COMPASS.html">COMPASS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/missionbio.demultiplex.phylogeny.sparc.SPARC.html">SPARC</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Functional Modules</span></p>
 <ul class="nav bd-sidenav">
@@ -404,6 +409,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unable-to-update-using-the-installer">Unable to update using the installer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-to-save-images-using-fig-write-image-on-windows-11">Failure to save images using <code class="docutils literal notranslate"><span class="pre">fig.write_image</span></code> on Windows 11</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-rosetta-2-on-apple-devices">Installing Rosetta 2 on Apple devices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-mosaic-on-macos-tahoe">Installing Mosaic on MacOS Tahoe</a></li>
 </ul>
 </li>
 </ul>
@@ -466,14 +472,13 @@ choose <code class="docutils literal notranslate"><span class="pre">Open</span><
 </section>
 <section id="windows-installation">
 <h3>Windows Installation<a class="headerlink" href="#windows-installation" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>Download the Windows installer from Tapestri Portal.</p></li>
 <li><p>Double click the installer. As the installer is not currently registered with Windows, you get a
-security warning dialogue. Click <code class="docutils literal notranslate"><span class="pre">More</span> <span class="pre">Info</span> <span class="pre">&gt;&gt;</span> <span class="pre">Run</span> <span class="pre">anyway</span></code> to install.</p></li>
-</ol>
+security warning dialogue. Click <code class="docutils literal notranslate"><span class="pre">More</span> <span class="pre">Info</span> <span class="pre">&gt;&gt;</span> <span class="pre">Run</span> <span class="pre">anyway</span></code> to install.</p>
 <a class="reference internal image-reference" href="../_images/windows_installation_warning.png"><img alt="Windows Installation Warning" src="../_images/windows_installation_warning.png" style="width: 30%;" /></a>
 <a class="reference internal image-reference" href="../_images/windows_installation_runanyway.png"><img alt="Windows Installation Run Anyway" src="../_images/windows_installation_runanyway.png" style="width: 30%;" /></a>
-<ol class="arabic simple" start="3">
+</li>
 <li><p>Follow the instructions on the wizard to complete the installation.</p></li>
 </ol>
 <div class="admonition note">
@@ -515,16 +520,16 @@ it is possible to install Mosaic through the <a class="reference external" href=
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
+<li><dl>
 <dt>Ensure that the <cite>libmamba</cite> solver is being used:</dt><dd><p>The <a class="reference external" href="https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community">libmamba</a> solver is
 a new dependency solver that is much faster than the default solver. Install it using the following:</p>
-</dd>
-</dl>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>install<span class="w"> </span>-n<span class="w"> </span>base<span class="w"> </span>conda-libmamba-solver
 <span class="gp">$ </span>conda<span class="w"> </span>config<span class="w"> </span>--set<span class="w"> </span>channel_priority<span class="w"> </span>strict
 <span class="gp">$ </span>conda<span class="w"> </span>config<span class="w"> </span>--set<span class="w"> </span>solver<span class="w"> </span>libmamba
 </pre></div>
 </div>
+</dd>
+</dl>
 </li>
 <li><dl>
 <dt>Install Mosaic</dt><dd><p>Following the successful installation of Anaconda, open your console/terminal and run the following commands:</p>
@@ -612,6 +617,26 @@ install Rosetta 2 using the command:</p>
 </div>
 <p>Follow the instructions and once installation is successful, continue with Mosaic installation.</p>
 </section>
+<section id="installing-mosaic-on-macos-tahoe">
+<h3>Installing Mosaic on MacOS Tahoe<a class="headerlink" href="#installing-mosaic-on-macos-tahoe" title="Permalink to this heading">#</a></h3>
+<p>MacOS installer provides the user with 2 options to install the software:</p>
+<ol class="arabic">
+<li><p>Install for me only</p></li>
+<li><p>Install on a specific device</p>
+<a class="reference internal image-reference" href="../_images/macos_tahoe_selection.png"><img alt="MacOS Tahoe Installation Selection Options" src="../_images/macos_tahoe_selection.png" style="width: 50%;" /></a>
+</li>
+</ol>
+<p>Since the release of MacOS Tahoe, the “Install on a specific disk” option is currently
+non-functional because the folder selection button is unresponsive.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a previous version of mosaic is installed, the existing <code class="docutils literal notranslate"><span class="pre">/Users/&lt;user_home&gt;/mosaic</span></code> folder
+must be deleted before proceeding with the new installation.</p>
+</div>
+<p>To successfully install mosaic, users must select the “Install for me only” option and proceed
+with the default settings. This will install the software in the default location:
+<code class="docutils literal notranslate"><span class="pre">/Users/&lt;user_home&gt;/mosaic</span></code>.</p>
+</section>
 </section>
 </section>
 
@@ -627,12 +652,12 @@ install Rosetta 2 using the command:</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../index.html"
+       href="license.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Mosaic API documentation</p>
+        <p class="prev-next-title">License</p>
       </div>
     </a>
     <a class="right-next"
@@ -674,6 +699,7 @@ install Rosetta 2 using the command:</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unable-to-update-using-the-installer">Unable to update using the installer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-to-save-images-using-fig-write-image-on-windows-11">Failure to save images using <code class="docutils literal notranslate"><span class="pre">fig.write_image</span></code> on Windows 11</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-rosetta-2-on-apple-devices">Installing Rosetta 2 on Apple devices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-mosaic-on-macos-tahoe">Installing Mosaic on MacOS Tahoe</a></li>
 </ul>
 </li>
 </ul>
@@ -700,7 +726,7 @@ By Saurabh Parikh
 
   <p class="copyright">
     
-      © Copyright 2021, Mission Bio.
+      © Copyright 2026, Mission Bio.
       <br/>
     
   </p>
